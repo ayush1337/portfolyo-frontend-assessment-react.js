@@ -75,8 +75,8 @@ export default function Experience() {
                             </h5>
                             <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                               <ul>
-                                {item.bulletPoints.map((point) => {
-                                  return <li>{point}</li>;
+                                {item.bulletPoints.map((point, index) => {
+                                  return <li key={index}>{point}</li>;
                                 })}
                               </ul>
                             </p>

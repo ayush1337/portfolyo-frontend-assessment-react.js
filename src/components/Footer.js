@@ -38,7 +38,7 @@ export default function Footer() {
                 <ul className="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
                   {portfolioData.user.social_handles.map((item) => {
                     return (
-                      <li className="inline">
+                      <li key={item._id} className="inline">
                         <Link
                           to="https://dribbble.com/shreethemes"
                           target="_blank"
